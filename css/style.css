@@ -1,7 +1,7 @@
 body {
   font-family: "Raleway", sans-serif;
   background-color: #fefeff;
-  scroll-behavior:smooth
+  scroll-behavior: smooth;
 }
 
 .layout_padding {
@@ -35,9 +35,6 @@ body {
   transition: all 0.3s ease 0s;
 }
 
-.hero_section .call_to-btn {
-}
-
 .call_to-btn img {
   width: 18px;
   margin-left: 10px;
@@ -68,6 +65,12 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.navbar-brand {
+  position: absolute;
+  top: -15px;
+  left: 0;
+}
+
 nav.navbar.navbar-expand-lg {
   padding: 10px 0;
 }
@@ -75,7 +78,7 @@ nav.navbar.navbar-expand-lg {
 .custom_nav-container.navbar-expand-lg .navbar-nav .nav-link {
   padding: 10px 20px;
   color: #f7f6f7;
-  
+
   text-align: center;
 }
 
@@ -132,8 +135,12 @@ a:focus {
 }
 
 .navbar-brand img {
-  width: 25px;
-  margin-right: 7px;
+  width: 10rem;
+  /* position: absolute; */
+
+  z-index: 999999;
+  /* margin-right: 7px; */
+  /* background-color: #010103; */
 }
 
 .custom_nav-container .nav_search-btn {
@@ -147,11 +154,6 @@ a:focus {
   border: none;
 }
 
-.navbar-brand {
-  display: flex;
-  align-items: center;
-}
-
 .navbar-brand span {
   font-size: 22px;
   font-weight: 700;
@@ -161,6 +163,7 @@ a:focus {
 .custom_nav-container {
   z-index: 99999;
   padding: 15px 0;
+  position: relative;
 }
 
 .custom_nav-container .navbar-toggler {
@@ -170,6 +173,10 @@ a:focus {
 .custom_nav-container .navbar-toggler .navbar-toggler-icon {
   background-image: url(../images/menu.png);
   background-size: 40px;
+}
+
+.navbar-toggler {
+  margin-left: auto;
 }
 
 /*end header section*/
@@ -201,8 +208,7 @@ a:focus {
 
 .hero_detail-box h1 {
   font-size: 50px;
-  color: #fefeff;
-  font-weight: 500;
+  font-weight: 700;
   /* width: 70%; */
 }
 
@@ -261,16 +267,6 @@ a:focus {
 /* end admission section */
 
 /* noticeboard section mew*/
-
-
-.noticeboard_section {
-}
-
-
-.noticeboard_section a {
-  background-color: #6ebca8;
-  color: #fefeff;
-}
 
 /* end noticeboard section */
 
@@ -469,7 +465,6 @@ a:focus {
 
 .info_section ul li a:hover {
   color: #fdd31d;
-  
 }
 
 .info_section h5 {
@@ -486,7 +481,7 @@ a:focus {
 .info_section .form_container input::placeholder {
   color: #ccc8c8;
 }
-.info_section  p{
+.info_section p {
   margin: 0;
   padding: 0;
 }
@@ -542,11 +537,20 @@ a:focus {
 }
 
 /* end footer section*/
- li{
+li {
   list-style: none;
- }
+}
 
-
-.intro article{
+.intro article {
   padding: 3rem;
+}
+
+.remove-bg a,
+.form-link a {
+  all: unset;
+  cursor: pointer;
+}
+
+.saturate {
+  filter: saturate(3);
 }
