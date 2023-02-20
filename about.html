@@ -40,7 +40,11 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    /><script src="https://kit.fontawesome.com/2a594fd4d6.js" crossorigin="anonymous"></script>
+    />
+    <script
+      src="https://kit.fontawesome.com/2a594fd4d6.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
@@ -110,19 +114,14 @@
         </div>
       </header>
       <div class="common_style layout_padding-top">
-        <section class="about_section">
+        <section class="about_section contact_section">
           <div class="container">
             <div class="row">
-              <div
-                class="col-lg-4 animate__animated animate__lightSpeedInRight"
-              >
-                <div class="about_img-container">
-                  <img src="images/kids.png" alt="kids" />
-                </div>
-              </div>
               <div class="col-lg-8 animate__animated animate__lightSpeedInLeft">
                 <div class="about_detail-box text-center">
-                  <h1 class="text-info display-3">About our School</h1>
+                  <h1 class="text-primary font-weight-normal display-3">
+                    About our School
+                  </h1>
                   <p class="">
                     Vidyakunj Primary School, which is owned and run by Krisha
                     Education & Charitable Trust – Dolvan, providing high
@@ -137,6 +136,13 @@
                   </p>
                 </div>
               </div>
+              <div
+                class="col-lg-4 animate__animated animate__lightSpeedInRight"
+              >
+                <div class="">
+                  <img src="images/kids.png" alt="kids" class="" />
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -144,12 +150,12 @@
     </div>
     <!-- end header section -->
 
-    <div class="common_style">
+    <div class="container">
       <!-- about section -->
 
-      <section class="container">
-        <div class="text-left p-3 animate__animated animate__flipInX">
-          <div class="">
+      <section class="">
+        <div class="text-left p-4 animate__animated animate__flipInX">
+          <div class="py-4">
             <h3 class="text-danger">Vision</h3>
             <p class="">
               Shaping a better future for mankind by developing effective and
@@ -157,7 +163,7 @@
             </p>
           </div>
 
-          <div class=" ">
+          <div class="py-4">
             <h3 class="text-danger">Mission</h3>
             <p class="">
               The education initiative emphasizes the all-round development of
@@ -170,7 +176,7 @@
             </p>
           </div>
 
-          <div class=" ">
+          <div class="py-4">
             <h3 class="text-danger">The School Campus</h3>
 
             <p class="">
@@ -188,11 +194,11 @@
       </section>
 
       <!-- end about section -->
-      <section>
-        <div class="container text-dark" data-aos="flip-up">
-          <h3 class="display-4 text-info">About Trust</h3>
+      <section class="p-4" style="background-color: #f6faff" data-aos="flip-up">
+        <div class="text-dark p-3">
+          <h3 class="display-4 text-primary p-3">About Trust</h3>
 
-          <p>
+          <p class="p-3">
             Krisha Education and Charitable Trust, located in Dolvan, provides
             primary education to students via Vidyakunj Primary School. The
             Trust strives to provide quality education to children from 1st to
@@ -201,19 +207,21 @@
             difference in the lives of children and families in Dolvan and
             beyond.
           </p>
-          <p>
+          <p class="p-3">
             Trust's primary responsibilities include building and developing a
             strategic plan, serving as fiduciary of the School, and maintaining
             and employing the Head of School.
           </p>
           <div>
-            <h3 class="display-5 text-info">Managing Committee</h3>
+            <h3 class="display-5 text-danger p-3">Managing Committee</h3>
             <ul>
               <li>
-                <p><strong>President :</strong> Shre Natubhai U. Gamit</p>
+                <span><strong>President :</strong> Shre Natubhai U. Gamit</span>
               </li>
               <li>
-                <p><strong>Secretary :</strong> Shre Yagneshbhai N. Gamit</p>
+                <span
+                  ><strong>Secretary :</strong> Shre Yagneshbhai N. Gamit</span
+                >
               </li>
             </ul>
           </div>
@@ -222,8 +230,8 @@
     </div>
 
     <!-- footer section -->
-    <footer class="container-fluid footer_section">
-      <article class="info_section p-2">
+    <footer class="footer_section">
+      <article class="info_section container-fluid">
         <div class="info_logo-box">
           <h2 class="text-center">Vidyakunj Primary School</h2>
         </div>
@@ -247,25 +255,32 @@
               <div class="row pt-2">
                 <div class="col-md-3">
                   <h5>Address</h5>
-                  <p>Near Dolvan Petrol Pump</p>
-                  <p>Pincode: 394635</p>
+                  <address>Near Dolvan Petrol Pump Pincode: 394635</address>
                 </div>
-
                 <div class="col-md-3">
                   <h5 class="">Phone</h5>
-                  <p>Genral: <a href="phoneto:9913508219">9913508219</a></p>
-                  <p>
-                    Addmission : <a href="phoneto:8980068451">8980068451</a>
-                  </p>
+                  <ul>
+                    <li>Genral: <a href="phoneto:9913508219">9913508219</a></li>
+                    <li>
+                      Addmission : <a href="phoneto:8980068451">8980068451</a>
+                    </li>
+                  </ul>
                 </div>
-                  <a href="mailto:vidyakunjprimarySchool@gmail.com"
-                    >vidyakunjprimarySchool@gmail.com</a
-                  >
+                <div class="col-md-3">
+                  <h5>Email</h5>
+                  <ul>
+                    <li>
+                      <a href="mailto:vidyakunjprimarySchool@gmail.com"
+                        >vidyakunjprimarySchool@gmail.com</a
+                      >
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
         <div class="container">
           <div class="social_container">
             <div class="social-box">

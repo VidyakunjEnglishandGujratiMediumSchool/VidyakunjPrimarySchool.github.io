@@ -1,6 +1,6 @@
 body {
   font-family: "Raleway", sans-serif;
-  background-color: #fefeff;
+  background-color: #fff9e4;
   scroll-behavior: smooth;
 }
 
@@ -29,8 +29,8 @@ body {
   padding: 15px 45px;
   border-radius: 10px;
   font-size: 15px;
-  background-color: #ffffff;
-  color: #262627;
+  /* background-color: #ffffff; */
+  /* color: #262627; */
   font-weight: 600;
   transition: all 0.3s ease 0s;
 }
@@ -130,12 +130,16 @@ a:focus {
 .top_container {
   position: relative;
 }
+header {
+  width: 100%;
+}
 
 .top_container::before {
   content: "";
   position: absolute;
   width: 100%;
   height: 100%;
+  background-color: #fff9e4;
   background: url(../images/hero-bg.png);
   background-size: 100% 100%;
   background-position: right bottom;
@@ -248,13 +252,6 @@ a:focus {
 /* end hero section */
 
 /* common style for some sections */
-.common_style > section {
-  padding: 50px 0;
-}
-
-.common_style .row {
-  align-items: center;
-}
 
 .common_style h3 {
   font-weight: 600;
@@ -276,26 +273,38 @@ a:focus {
 /* about section */
 .about_section {
   text-align: right;
+  /* background-color: #fff9e4; */
 }
 
-.about_section a {
-  background-color: #6ebca8;
-  color: #fefeff;
+.hero-btn a {
+  color: Blue;
+  background-color: white;
+  border: 1px solid blue;
 }
-
+.hero-btn a:hover,
+.hero-btn a:focus {
+  color: white;
+  background-color: blue;
+}
 /* end about section */
 
 /* admission section */
 
-.admission_section a {
-  background-color: #fdd31d;
-  color: #fefeff;
-}
-
 /* end admission section */
 
 /* noticeboard section mew*/
+.notice-section {
+  padding: 2rem 0;
+  background-color: #e8f2ff;
+}
 
+.notice-section:nth-child(2) {
+  background-color: #f6faff;
+}
+
+.notice-info h3 {
+  padding: 0.5rem 0;
+}
 /* end noticeboard section */
 
 /* determine section */
@@ -412,8 +421,6 @@ a:focus {
 /* contact section */
 
 .contact_section {
-  padding: 75px 45px;
-
   font-family: "Poppins", sans-serif;
 }
 
@@ -462,8 +469,8 @@ a:focus {
 
 /* info section */
 .info_section {
-  background-color: #8d1010;
-  color: #ffffff;
+  background-color: #ffce32;
+  color: #000;
   font-family: "Poppins", sans-serif;
 }
 
@@ -475,7 +482,7 @@ a:focus {
 .info_logo-box h2 {
   font-weight: bold;
   padding: 5px 7px;
-  border-bottom: 1.5px solid #fdd31d;
+  border-bottom: 1.5px solid #898989;
 }
 
 .info_section ul {
@@ -488,11 +495,11 @@ a:focus {
 }
 
 .info_section ul li a {
-  color: #ffffff;
+  color: blue;
 }
 
 .info_section ul li a:hover {
-  color: #fdd31d;
+  color: white;
 }
 
 .info_section h5 {
@@ -549,15 +556,30 @@ a:focus {
 /* footer section*/
 
 .footer_section {
-  background-color: #d8b109;
   /* padding: 20px 15px; */
+  background-color: #f2c32b;
   font-family: "Poppins", sans-serif;
+  color: #000;
+}
+.footer_section article {
+  padding-top: 2rem;
 }
 
+p {
+  color: #42464f;
+}
 .footer_section p {
   color: #fdfdfe;
+  padding: 1rem;
   margin: 0;
   text-align: center;
+  background-color: #f2c32b;
+}
+
+.footer_section > p {
+  /* background-color: #d8b109; */
+  padding: 1rem;
+  color: #121722;
 }
 
 .footer_section a {
@@ -579,6 +601,16 @@ li {
   cursor: pointer;
 }
 
-.saturate {
-  filter: saturate(3);
+.noticeboard_detail-box {
+  background-color: #f6faff;
+}
+
+.title {
+  background-color: #fdd31d;
+}
+.list-group .list-group-item {
+  background-color: inherit;
+  border-top: 1px solid #fff;
+  border-left-color: #fff;
+  border-right-color: #fff;
 }
