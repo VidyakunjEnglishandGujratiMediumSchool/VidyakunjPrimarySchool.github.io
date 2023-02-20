@@ -18,7 +18,10 @@
     <meta name="author" content="sneh-al" />
 
     <title>Vidyakunj Primary School</title>
-
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
     <!-- bootstrap core css -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
     <!-- progress barstle -->
@@ -41,6 +44,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <script
+      src="https://kit.fontawesome.com/2a594fd4d6.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
@@ -112,7 +119,10 @@
       <section class="hero_section layout_padding2">
         <div class="hero-container container">
           <div class="hero_detail-box animate__animated animate__bounceInLeft">
-            <h1>WELCOME TO Vidyakunj Primary School!</h1>
+            <h1  class="">
+              <p class="text-primary m-0 p-0">WELCOME TO </p> 
+              <p class="text-dark m-0 p-0">Vidyakunj Primary School!</p>
+            </h1>
           </div>
           <div
             class="hero_img-container d-flex flex-column animate__animated animate__bounceInRight"
@@ -307,7 +317,7 @@
 
     <!-- footer section -->
     <footer class="container-fluid footer_section">
-      <article class="info_section p-2">
+      <article class="info_section ">
         <div class="info_logo-box">
           <h2 class="text-center">Vidyakunj Primary School</h2>
         </div>
@@ -332,13 +342,17 @@
                 <div class="col-md-3">
                   <h5>Address</h5>
                   <p>Near Dolvan Petrol Pump</p>
-                  <p>Pincode: 394633</p>
+                  <p>Pincode: 394635</p>
                 </div>
-
                 <div class="col-md-3">
                   <h5 class="">Phone</h5>
-                  <p>Genral: <a href="phoneto:123456789">123456789</a></p>
-                  <p>Addmission : <a href="phoneto:123456789">123456789</a></p>
+                  <ul>
+
+                    <li>Genral: <a href="phoneto:9913508219">9913508219</a></li>
+                    <li>
+                      Addmission : <a href="phoneto:8980068451">8980068451</a>
+                    </ul>
+                  </p>
                 </div>
                 <div class="col-md-3">
                   <h5>Email</h5>
@@ -370,7 +384,7 @@
       </article>
       <p>
         Copyright &copy; 2023 All Rights Reserved By
-        <a href="https://html.design/">Vidyakunj Primary School</a>
+        <a href="index.html">Vidyakunj Primary School</a>
       </p>
     </footer>
     <!-- footer section -->

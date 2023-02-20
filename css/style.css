@@ -77,9 +77,10 @@ nav.navbar.navbar-expand-lg {
 
 .custom_nav-container.navbar-expand-lg .navbar-nav .nav-link {
   padding: 10px 20px;
-  color: #f7f6f7;
 
+  position: relative;
   text-align: center;
+  display: inline-block;
 }
 
 a,
@@ -91,6 +92,33 @@ a:focus {
 a:hover,
 a:focus {
   color: initial;
+}
+
+.nav-link {
+  position: relative;
+  color: #000;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #000;
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: blue;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.nav-link:hover::before {
+  transform: scaleX(1);
 }
 
 .btn,
@@ -434,7 +462,7 @@ a:focus {
 
 /* info section */
 .info_section {
-  background-color: #363636;
+  background-color: #8d1010;
   color: #ffffff;
   font-family: "Poppins", sans-serif;
 }
@@ -522,7 +550,7 @@ a:focus {
 
 .footer_section {
   background-color: #d8b109;
-  padding: 20px 15px;
+  /* padding: 20px 15px; */
   font-family: "Poppins", sans-serif;
 }
 
