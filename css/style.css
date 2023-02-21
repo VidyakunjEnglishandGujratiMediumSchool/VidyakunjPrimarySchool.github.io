@@ -678,3 +678,7 @@ li {
 section {
   padding-block: 5rem;
 }
+
+.card {
+  background-color: #e8f2ff;
+}
