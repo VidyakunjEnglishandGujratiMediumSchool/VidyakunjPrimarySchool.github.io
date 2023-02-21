@@ -20,7 +20,12 @@
   }
 
   .custom_nav-container.navbar-expand-lg .navbar-nav .nav-link {
-    color: #fff;
+    /* color: #fff; */
+  }
+  .nav-link {
+    position: relative;
+    color: #000;
+    text-decoration: none;
   }
 }
 
@@ -53,6 +58,11 @@
 }
 
 @media (max-width: 576px) {
+  /* .pa-gallery-player-widget {
+    margin: 0 auto;
+
+    width: 90%;
+  } */
   .hero-container {
     padding-bottom: 100px;
   }
@@ -61,7 +71,7 @@
     padding-top: 4rem;
   }
   .navbar-nav {
-    padding-top: 5rem;
+    padding-top: 6rem;
     transition: all smooth;
   }
   .client_img-box::before,
