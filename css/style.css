@@ -502,8 +502,9 @@ header {
 
 .info_logo-box h1 {
   padding: 10px 7px;
-  color: #000;
-  border-bottom: 1.5px solid #898989;
+  color: #007bff;
+
+  border-bottom: 1.5px solid #007bff;
   font-size: 3rem;
 }
 
@@ -517,7 +518,7 @@ header {
 }
 
 .info_section ul li a {
-  color: blue;
+  color: #007bff;
 }
 
 .info_section ul li a:hover {
@@ -606,6 +607,7 @@ header {
   inset: 0;
   transform: skewY(var(--skew-angle));
 }
+
 .footer_section {
   /* padding: 20px 15px; */
   /* padding-top: 3rem; */
@@ -640,7 +642,7 @@ p {
 }
 
 .footer_section a {
-  color: #fdfdfe;
+  color: #;
 }
 
 /* end footer section*/
@@ -676,6 +678,6 @@ section {
   padding-block: 5rem;
 }
 
-.card {
+.card-body {
   background-color: #e8f2ff;
 }
