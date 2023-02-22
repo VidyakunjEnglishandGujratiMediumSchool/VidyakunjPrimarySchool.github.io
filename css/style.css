@@ -140,31 +140,28 @@ header {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #fff9e4;
-  background: url(../images/hero-bg.png);
+  background-color: #f2c32b;
   background-size: 100% 100%;
   background-position: right bottom;
   background-repeat: no-repeat;
   z-index: -1;
 }
 
-.sub_page .top_container::before {
-  background-color: #fdd31d;
-  background-image: none;
+.hero_section {
+  /* background-color: #f2c32b; */
+  background-color: #ffce32;
 }
 
 .top_container::after {
   content: "";
   position: absolute;
-  width: 75px;
-  height: 75px;
-  bottom: 20%;
-  left: 6%;
-  background-color: #fdd31d;
-}
+  width: 200px;
+  height: 200px;
+  /* bottom: 0; */
+  left: 12%;
+  /* background-color: #f2c32b; */
 
-.sub_page .top_container::after {
-  display: none;
+  /* background-color: red; */
 }
 
 .navbar-brand img {
@@ -245,7 +242,7 @@ header {
 .hero-container {
   display: flex;
   padding-top: 90px;
-  padding-bottom: 325px;
+  /* padding-bottom: 325px; */
 }
 
 .hero_detail-box {
@@ -299,10 +296,6 @@ header {
 /* end common style */
 
 /* about section */
-.about_section {
-  text-align: right;
-  /* background-color: #fff9e4; */
-}
 
 .hero-btn a {
   color: Blue;
@@ -599,6 +592,10 @@ header {
 
 .pa-gallery-player-widget iframe {
   width: 100%;
+}
+
+.contact_Section {
+  font-family: "Raleway ";
 }
 
 .diognal::after {

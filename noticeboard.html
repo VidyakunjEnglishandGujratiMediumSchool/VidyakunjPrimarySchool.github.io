@@ -18,6 +18,13 @@
     <meta name="author" content="sneh-al" />
 
     <title>Vidyakunj Primary School</title>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="css/responsive.css" rel="stylesheet" />
 
     <!-- bootstrap core css -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -33,9 +40,6 @@
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
     />
     <!-- Custom styles for this template -->
-    <link href="css/style.css" rel="stylesheet" />
-    <!-- responsive style -->
-    <link href="css/responsive.css" rel="stylesheet" />
 
     <link
       rel="stylesheet"
@@ -47,7 +51,7 @@
     ></script>
   </head>
 
-  <body class="sub_page">
+  <body>
     <div class="top_container">
       <!-- header section strats -->
       <header class="header_section">
@@ -113,20 +117,17 @@
           </nav>
         </div>
       </header>
-      <section class="layout_padding-top contact_section">
-        <div class="pt-5">
-          <div class="d-flex align-items-center justify-content-center">
-            <h1 class="text-primary display-4 font-weight-normal">
-              Noticeboard
-            </h1>
-          </div>
-        </div>
-      </section>
     </div>
     <!-- end header section -->
-
+    <section class="layout_padding-top hero_section">
+      <div class="pt-5">
+        <div class="d-flex align-items-center justify-content-center">
+          <h1 class="text-primary display-4 font-weight-normal">Noticeboard</h1>
+        </div>
+      </div>
+    </section>
     <!-- info section -->
-    <div class="common_style py-4">
+    <section class="common_style">
       <!-- noticeboard section -->
       <section class="noticeboard_section text-left">
         <div class="container">
@@ -222,7 +223,7 @@
         </div>
       </section>
       <!-- end noticeboard section -->
-    </div>
+    </section>
     <!-- end info section -->
 
     <!-- footer section -->
@@ -250,11 +251,18 @@
             <div class="col-md-9 text-center">
               <div class="row pt-2">
                 <div class="col-md-3">
-                  <h5>Address</h5>
+                  <h5>
+                    <i class="fa-solid fa-map-location-dot"></i>
+                    <span class="pl-3">Address</span>
+                  </h5>
+
                   <address>Near Dolvan Petrol Pump Pincode: 394635</address>
                 </div>
                 <div class="col-md-3">
-                  <h5 class="">Phone</h5>
+                  <h5>
+                    <i class="fa-solid fa-phone" style="color: inherit"></i>
+                    <span class="pl-3">Phone</span>
+                  </h5>
                   <ul>
                     <li>Genral: <a href="phoneto:9913508219">9913508219</a></li>
                     <li>
@@ -263,7 +271,10 @@
                   </ul>
                 </div>
                 <div class="col-md-3">
-                  <h5>Email</h5>
+                  <h5>
+                    <i class="fa-solid fa-envelope"></i>
+                    <span class="pl-3"> Email </span>
+                  </h5>
                   <ul>
                     <li>
                       <a href="mailto:vidyakunjprimarySchool@gmail.com"

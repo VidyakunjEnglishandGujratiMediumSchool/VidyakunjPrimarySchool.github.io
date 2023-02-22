@@ -16,9 +16,15 @@
       content="Vidyakunj Gujarti and English medium Primary School Dolvan"
     />
     <meta name="author" content="sneh-al" />
-
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
     <title>Vidyakunj Primary School</title>
-
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="css/responsive.css" rel="stylesheet" />
     <!-- bootstrap core css -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
     <!-- progress barstle -->
@@ -32,10 +38,6 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
     />
-    <!-- Custom styles for this template -->
-    <link href="css/style.css" rel="stylesheet" />
-    <!-- responsive style -->
-    <link href="css/responsive.css" rel="stylesheet" />
 
     <link
       rel="stylesheet"
@@ -49,7 +51,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
 
-  <body class="sub_page">
+  <body class="">
     <div class="top_container">
       <!-- header section strats -->
       <header class="header_section">
@@ -115,43 +117,38 @@
           </nav>
         </div>
       </header>
-
-      <section class="about_section layout_padding-top">
-        <div class="container pt-5">
-          <div class="row">
-            <div class="col-lg-8 animate__animated animate__lightSpeedInLeft">
-              <div class="about_detail-box text-center">
-                <h1 class="text-primary font-weight-normal display-3">
-                  About our School
-                </h1>
-                <p
-                  class="font-weight-normal text-secondary lead"
-                  style="color: black"
-                >
-                  Vidyakunj Primary School, which is owned and run by Krisha
-                  Education & Charitable Trust – Dolvan, providing high quality
-                  education to children from 1st to 8th grade and has been
-                  working to mould young minds since 2015.Its only objective is
-                  to give kids a holistic education with integrated learning and
-                  to encourage their creativity. The school offers a unique
-                  learning experience, which is a blend of fun and academics.
-                  The focus is on overall development of the child, and not just
-                  on academics. This is done by encouraging creativity and
-                  hands-on learning.
-                </p>
-              </div>
-            </div>
-            <div class="col-lg-4 animate__animated animate__lightSpeedInRight">
-              <div class="">
-                <img src="images/kids.png" alt="kids" class="img-fluid" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
     <!-- end header section -->
 
+    <section class="layout_padding-top hero_section">
+      <div class="container pt-5">
+        <div class="row">
+          <div class="col-lg-8 animate__animated animate__lightSpeedInLeft">
+            <div class="about_detail-box text-center">
+              <h1 class="text-primary font-weight-normal display-3">
+                About our School
+              </h1>
+              <p class="text-secondary lead">
+                Vidyakunj Primary School, which is owned and run by Krisha
+                Education & Charitable Trust – Dolvan, providing high quality
+                education to children from 1st to 8th grade and has been working
+                to mould young minds since 2015.Its only objective is to give
+                kids a holistic education with integrated learning and to
+                encourage their creativity. The school offers a unique learning
+                experience, which is a blend of fun and academics. The focus is
+                on overall development of the child, and not just on academics.
+                This is done by encouraging creativity and hands-on learning.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 animate__animated animate__lightSpeedInRight">
+            <div class="">
+              <img src="images/kids.png" alt="kids" class="img-fluid" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- about section -->
 
     <section class="">
@@ -256,11 +253,18 @@
             <div class="col-md-9 text-center">
               <div class="row pt-2">
                 <div class="col-md-3">
-                  <h5>Address</h5>
+                  <h5>
+                    <i class="fa-solid fa-map-location-dot"></i>
+                    <span class="pl-3">Address</span>
+                  </h5>
+
                   <address>Near Dolvan Petrol Pump Pincode: 394635</address>
                 </div>
                 <div class="col-md-3">
-                  <h5 class="">Phone</h5>
+                  <h5>
+                    <i class="fa-solid fa-phone" style="color: inherit"></i>
+                    <span class="pl-3">Phone</span>
+                  </h5>
                   <ul>
                     <li>Genral: <a href="phoneto:9913508219">9913508219</a></li>
                     <li>
@@ -269,7 +273,10 @@
                   </ul>
                 </div>
                 <div class="col-md-3">
-                  <h5>Email</h5>
+                  <h5>
+                    <i class="fa-solid fa-envelope"></i>
+                    <span class="pl-3"> Email </span>
+                  </h5>
                   <ul>
                     <li>
                       <a href="mailto:vidyakunjprimarySchool@gmail.com"
@@ -307,7 +314,6 @@
       </p>
     </footer>
     <!-- footer section -->
-
     <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

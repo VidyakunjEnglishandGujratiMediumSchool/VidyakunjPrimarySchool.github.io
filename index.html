@@ -22,6 +22,11 @@
       http-equiv="Content-Security-Policy"
       content="upgrade-insecure-requests"
     />
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="css/responsive.css" rel="stylesheet" />
     <!-- bootstrap core css -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
     <!-- progress barstle -->
@@ -35,10 +40,6 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
     />
-    <!-- Custom styles for this template -->
-    <link href="css/style.css" rel="stylesheet" />
-    <!-- responsive style -->
-    <link href="css/responsive.css" rel="stylesheet" />
     <!-- animate.css -->
     <link
       rel="stylesheet"
@@ -118,62 +119,64 @@
           </nav>
         </div>
       </header>
-      <section class="hero_section layout_padding2">
-        <div class="hero-container container">
-          <div class="hero_detail-box animate__animated animate__bounceInLeft">
-            <h1 class="">
-              <sapn class="text-primary display-4">WELCOME TO</sapn>
-              <sapn class="text-dark">Vidyakunj Primary School!</sapn>
-            </h1>
-          </div>
+    </div>
+
+    <!-- end header section -->
+    <section class="hero_section layout_padding-top">
+      <div class="hero-container container">
+        <div class="hero_detail-box animate__animated animate__bounceInLeft">
+          <h1 class="">
+            <sapn class="text-primary display-3">WELCOME TO</sapn>
+            <sapn class="text-dark">Vidyakunj Primary School!</sapn>
+          </h1>
+        </div>
+        <div
+          class="hero_img-container d-flex flex-column animate__animated animate__bounceInRight"
+        >
           <div
-            class="hero_img-container d-flex flex-column animate__animated animate__bounceInRight"
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-ride="carousel"
           >
-            <div
-              id="carouselExampleIndicators"
-              class="carousel slide"
-              data-ride="carousel"
-            >
-              <ol class="carousel-indicators">
-                <li
-                  data-target="#carouselExampleIndicators"
-                  data-slide-to="0"
-                  class="active"
-                ></li>
-                <li
-                  data-target="#carouselExampleIndicators"
-                  data-slide-to="1"
-                ></li>
-                <li
-                  data-target="#carouselExampleIndicators"
-                  data-slide-to="2"
-                ></li>
-              </ol>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <div class="row">
-                    <div class="col">
-                      <div class="client_img-box">
-                        <img src="images/event2.jpeg" alt="" />
-                      </div>
+            <ol class="carousel-indicators">
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="0"
+                class="active"
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="1"
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="2"
+              ></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col">
+                    <div class="client_img-box">
+                      <img src="images/event2.jpeg" alt="" />
                     </div>
                   </div>
                 </div>
-                <div class="carousel-item">
-                  <div class="row">
-                    <div class="col">
-                      <div class="client_img-box">
-                        <img src="images/event2.jpeg" alt="" />
-                      </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col">
+                    <div class="client_img-box">
+                      <img src="images/event2.jpeg" alt="" />
                     </div>
                   </div>
                 </div>
-                <div class="carousel-item">
-                  <div class="row">
-                    <div class="col">
-                      <div class="client_img-box">
-                        <img src="images/event2.jpeg" alt="" />
-                      </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col">
+                    <div class="client_img-box">
+                      <img src="images/event2.jpeg" alt="" />
                     </div>
                   </div>
                 </div>
@@ -181,11 +184,8 @@
             </div>
           </div>
         </div>
-      </section>
-    </div>
-
-    <!-- end header section -->
-
+      </div>
+    </section>
     <section class="common_style text-center hero-about">
       <!-- about section -->
       <article class="about_section text-center pb-5">
@@ -334,11 +334,18 @@
             <div class="col-md-9 text-center">
               <div class="row pt-2">
                 <div class="col-md-3">
-                  <h5>Address</h5>
+                  <h5>
+                    <i class="fa-solid fa-map-location-dot"></i>
+                    <span class="pl-3">Address</span>
+                  </h5>
+
                   <address>Near Dolvan Petrol Pump Pincode: 394635</address>
                 </div>
                 <div class="col-md-3">
-                  <h5 class="">Phone</h5>
+                  <h5>
+                    <i class="fa-solid fa-phone" style="color: inherit"></i>
+                    <span class="pl-3">Phone</span>
+                  </h5>
                   <ul>
                     <li>Genral: <a href="phoneto:9913508219">9913508219</a></li>
                     <li>
@@ -347,7 +354,10 @@
                   </ul>
                 </div>
                 <div class="col-md-3">
-                  <h5>Email</h5>
+                  <h5>
+                    <i class="fa-solid fa-envelope"></i>
+                    <span class="pl-3"> Email </span>
+                  </h5>
                   <ul>
                     <li>
                       <a href="mailto:vidyakunjprimarySchool@gmail.com"
